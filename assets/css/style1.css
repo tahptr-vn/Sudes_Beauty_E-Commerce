@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: #72a834;
+  --subColor: #4e7661;
+  --textColor: #00090f;
+  --topHeader: #8cc7a8;
+  --bgHeader: #ffffff;
+  --topHeader2: #b2d18f;
+  --bgFlash: linear-gradient(
+    to right,
+    rgb(140, 199, 168, 0.6),
+    rgb(178, 209, 143, 0.6)
+  );
+  --gutter: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+/* Bắt đầu top-hea */
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  src: url(//bizweb.dktcdn.net/100/495/928/themes/921279/assets/gilroy_regular.otf?1732110963485)
+    format("opentype");
+}
+
+body {
+  font-size: 14px;
+  font-family: "Gilroy";
+  line-height: 1.7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.top-hea .top-content {
+  height: 30px;
+  background: linear-gradient(to right, #8cc7a8, #b2d18f);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  gap: 20px;
+  align-items: center;
+  line-height: 30px;
+  padding: 0 20px;
+}
+
+.separator {
+  width: 2px;
+  min-width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #fff;
+}
+/* kết thúc top-hea */
+
+/* Bắt đầu middle-header */
+.container {
+  padding-left: 45px;
+  padding-right: 45px;
+  max-width: 1367px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.top-header .header-logo {
+  padding: 5px 0px;
+}
+
+.top-header .header-logo a {
+}
+
+.top-header .header-logo a img {
+  width: 150px;
+  height: 60px;
+  margin-right: 45px;
+}
+
+.box-right {
+  max-height: 70px;
+}
+
+.box-icon-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+  margin: 12px 0px;
+}
+
+.box-maps,
+.box-tap-chi,
+.box-menu,
+.box-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  margin-right: 15px;
+}
+
+.box-maps .icon_maps img,
+.box-tap-chi .icon_tap_chi img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.content_maps,
+.content_tap_chi,
+.content_account {
+  margin-left: 5px;
+}
+
+.content_maps a,
+.content_tap_chi a,
+.content_account a {
+  color: #000;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.content_maps a:hover,
+.content_tap_chi a:hover,
+.content_account a:hover {
+  color: var(--mainColor);
+}
+
+.icon_maps,
+.icon_tap_chi {
+  line-height: 0;
+}
+
+.svgopen {
+  font-size: 20px;
+}
+
+.ant-divider-vertical {
+  height: 24px;
+  border-left: 1px solid rgba(0, 0, 0, 0.35);
+  margin: 0 15px;
+}
+
+.wish-header {
+  line-height: 1.1;
+  color: #000;
+  margin-right: 15px;
+  position: relative;
+}
+
+.js-wishlist-count {
+  font-size: 10px;
+  text-decoration: none;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  text-align: center;
+  display: inline-block;
+  top: -2px;
+  position: absolute;
+  right: -6px;
+}
+
+.header-action_cart {
+  position: relative;
+}
+
+.cart-header {
+  line-height: 1.1;
+  color: #000;
+  position: relative;
+  height: 24px;
+  display: inline-block;
+}
+
+.count_item_pr {
+  font-size: 10px;
+  text-decoration: none;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  color: #fff;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  text-align: center;
+  display: inline-block;
+  top: -2px;
+  position: absolute;
+  right: 0px;
+}
+/* Kết thúc middle-header */
+
+/* Bắt đầu content */
+.content {
+  height: 1000px;
+}
+/* Kết thúc content */
